@@ -53,12 +53,15 @@ fun main() {
     week(34) {
       active = true
       lecture("Introduction") {
+        objective = "To get an idea of the course content"
         slides("resources/00-kotlin.pdf")
         }
       }
     week(40) {
       active = true
       lecture("Basics") {
+        comprehension("different implementations of properties")
+        knowledge("the reason behind a restrictive code policy")
         slides("resources/01-basic-kotlin-handouts.pdf")
         }
       lecture("Variables, functions, and classes")

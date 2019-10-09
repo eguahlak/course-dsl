@@ -8,6 +8,8 @@ class Lecture(val week: Week, val title: String) {
   var overview: String? = null
   val sections = mutableListOf<Section>()
   val resources = mutableListOf<Resource>()
+  var objective: String? = null
+  val objectives = mutableListOf<Objective>()
 
   fun monday(interval: Pair<String,String>) { timeSlot = TimeSlot(WeekDay.MONDAY, interval) }
   fun tuesday(interval: Pair<String,String>) { timeSlot = TimeSlot(WeekDay.TUESDAY, interval) }
@@ -18,6 +20,8 @@ class Lecture(val week: Week, val title: String) {
   val header get() = title
 
   fun add(section: Section) { sections.add(section) }
+  fun add(objective: Objective) { objectives.add(objective) }
+  fun add(resource: Resource) { resources.add(resource) }
   }
 
 fun Week.lecture(title: String, build: Lecture.() -> Unit = {}): Lecture {

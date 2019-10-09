@@ -15,4 +15,4 @@ fun Lecture.resource(sourcePath: String, category: String, toFront: Boolean = fa
   }
 
 fun Lecture.slides(sourcePath: String, build: Resource.() -> Unit = { }) =
-    resource(sourcePath, "slide", true, build)
+    resource(sourcePath, "slides", true, build)
