@@ -2,14 +2,18 @@ package dk.kalhauge.course.dsl
 
 class Lecture(val week: Week, val title: String) {
   lateinit var timeSlot: TimeSlot
-  val number = week.course.nextLectureNumber
+  val number = week.flow.course.lectureOffset++
   val code get() = if (number < 10) "0$number" else "$number"
   var note: String = ""
   var overview: String? = null
-  val sections = mutableListOf<Section>()
+  // val sections = mutableListOf<Section>()
   val resources = mutableListOf<Resource>()
-  var objective: String? = null
+  var objective: String? = "After the lecture the student will"
   val objectives = mutableListOf<Objective>()
+  var activity: String? = ""
+  val activities = mutableListOf<Activity>()
+  val load by lazy { activities.map { it.load }.sum() }
+  val workLoad get() = if (load < 0.0001) "" else "$load"
 
   fun monday(interval: Pair<String,String>) { timeSlot = TimeSlot(WeekDay.MONDAY, interval) }
   fun tuesday(interval: Pair<String,String>) { timeSlot = TimeSlot(WeekDay.TUESDAY, interval) }
@@ -19,17 +23,20 @@ class Lecture(val week: Week, val title: String) {
 
   val header get() = title
 
-  fun add(section: Section) { sections.add(section) }
+  // fun add(section: Section) { sections.add(section) }
   fun add(objective: Objective) { objectives.add(objective) }
-  fun add(resource: Resource) { resources.add(resource) }
+  fun add(resource: Resource) {
+    resources.add(resource)
+    if (resource.toFront) week.flow.course.add(resource)
+    }
+  fun add(activity: Activity) { activities.add(activity) }
   }
 
 fun Week.lecture(title: String, build: Lecture.() -> Unit = {}): Lecture {
   val lecture = Lecture(this, title)
   val timeSlotIndex = this.lectures.size
   add(lecture)
-  this.course.add(lecture)
-  if (timeSlotIndex < this.course.timeSlots.size) lecture.timeSlot = this.course.timeSlots[timeSlotIndex]
+  if (timeSlotIndex < this.flow.course.timeSlots.size) lecture.timeSlot = this.flow.course.timeSlots[timeSlotIndex]
   lecture.build()
   return lecture
   }

@@ -8,6 +8,10 @@ interface Context {
   fun printLine(text: String?, emptyLineCount: Int = 1)
   fun open(filename: String)
   fun close()
+  fun printLine() { printLine("", 0) }
+  fun printLine(prefix: String, text: String?, emptyLineCount: Int = 1) {
+    if (text != null) printLine("$prefix $text", emptyLineCount)
+    }
   }
 
 class ConsoleContext() : Context {

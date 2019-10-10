@@ -5,13 +5,13 @@ class TimeSlot(val weekDay: WeekDay, val start: String, val end: String) {
   val startText get() = if (start == "08:30" || start == "12:30") start else "**$start**"
   val endText get() = if (end == "12:00" || end == "16:00") end else "**$end**"
   override fun toString() = when (weekDay) {
-    WeekDay.MONDAY -> "MO $startText-$endText"
-    WeekDay.TUESDAY -> "TU $startText-$endText"
-    WeekDay.WEDNESDAY -> "WE $startText-$endText"
-    WeekDay.THURSDAY -> "TH $startText-$endText"
-    WeekDay.FRIDAY -> "FR $startText-$endText"
-    WeekDay.SATURDAY -> "**SA** $startText-$endText"
-    WeekDay.SUNDAY -> "**SU** $startText-$endText"
+    WeekDay.MONDAY ->    "  MON   | $startText-$endText"
+    WeekDay.TUESDAY ->   "  TUE   | $startText-$endText"
+    WeekDay.WEDNESDAY -> "  WED   | $startText-$endText"
+    WeekDay.THURSDAY ->  "  THU   | $startText-$endText"
+    WeekDay.FRIDAY ->    "  FRI   | $startText-$endText"
+    WeekDay.SATURDAY ->  "**SAT** | $startText-$endText"
+    WeekDay.SUNDAY ->    "**SUN** | $startText-$endText"
     }
   }
 

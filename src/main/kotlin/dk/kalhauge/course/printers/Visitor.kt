@@ -6,5 +6,5 @@ interface Visitor {
   fun visit(course: Course)
   fun visit(week: Week)
   fun visit(lecture: Lecture)
-  fun visit(section: Section)
+  fun visit(flow: Flow)
   }

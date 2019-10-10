@@ -1,5 +1,6 @@
+package ap
+
 import dk.kalhauge.course.dsl.*
-import dk.kalhauge.course.printers.ConsoleContext
 import dk.kalhauge.course.printers.FileContext
 import dk.kalhauge.course.printers.GitHubPagesVisitor
 
@@ -33,60 +34,15 @@ fun main() {
       We will create a Kotlin API, for running embedded Elm.
       In addition, Javascript will be integrated.
       """.trimIndent()
-    section("Kotlin") {
-      +"""
-        We will look at basis and the advanced topics of the programming language Kotlin.
-        There will be examples on how the same or similar features are implemented in 
-        languages as C#, Java, and JS.
+    kotlinFlow()
+    elmFlow()
+    androidFlow()
+
+    attendance(20.0)
+
+    exam = """
+      30 minutes oral exam, no preparation but questions known in advance.
       """.trimIndent()
-      }
-    section("Elm",
-      """
-        Elm is a ...
-      """.trimIndent())
-    section("Android") {
-      +"""
-        Kotlin has been selected by Google as the language for Android.
-        We will have small detours to C and Arduinos (Node MCU’s)
-      """.trimIndent()
-      }
-    week(34) {
-      active = true
-      lecture("Introduction") {
-        objective = "To get an idea of the course content"
-        slides("resources/00-kotlin.pdf")
-        }
-      }
-    week(40) {
-      active = true
-      lecture("Basics") {
-        comprehension("different implementations of properties")
-        knowledge("the reason behind a restrictive code policy")
-        slides("resources/01-basic-kotlin-handouts.pdf")
-        }
-      lecture("Variables, functions, and classes")
-      }
-    week(41) {
-      active = true
-      lecture("Lambdas, collections, and streams")
-      lecture("Extension functions and DSL") {
-        wednesday("13:00" to "16:00")
-        note = "Remember internship fair"
-        }
-      }
-    week(42) { title = "**Fall leave**" }
-    week(43) {
-      lecture("Reflection")
-      lecture("Network with TCP and UDP sockets")
-      }
-    week(44) {
-      title = "Coroutines"
-      lecture("Build in coroutines")
-      lecture("Custom coroutines")
-      }
-    week(45) {
-      lecture("Assignment 1")
-      }
     }
   GitHubPagesVisitor(FileContext("/Users/AKA/DatSoftLyngby/dat4sem2019fall-advanced-programming/docs")).visit(course)
   // GitHubPagesVisitor(ConsoleContext()).visit(course)
