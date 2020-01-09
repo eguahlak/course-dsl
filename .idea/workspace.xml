@@ -2,64 +2,71 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3a9e4b33-a349-4a94-82f7-508eaeb92e7b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ap/androidFlow.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ap/elmFlow.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ap/kotlinFlow.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/dk/kalhauge/course/dsl/Activity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/dk/kalhauge/course/dsl/Creditable.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/dk/kalhauge/course/dsl/Flow.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/dk/kalhauge/course/dsl/Plan.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ap2019b/androidFlow.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ap2019b/elmFlow.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ap2019b/kotlinFlow.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ap2020a/Program.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ap2020a/androidFlow.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ap2020a/elmFlow.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ap2020a/kotlinFlow.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/dk/kalhauge/document/dsl/Block.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/dk/kalhauge/document/dsl/Code.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/dk/kalhauge/document/dsl/Context.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/dk/kalhauge/document/dsl/Document.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/dk/kalhauge/document/dsl/Image.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/dk/kalhauge/document/dsl/Inline.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/dk/kalhauge/document/dsl/Listing.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/dk/kalhauge/document/dsl/Math.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/dk/kalhauge/document/dsl/Paragraph.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/dk/kalhauge/document/dsl/Resource.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/dk/kalhauge/document/dsl/Section.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/dk/kalhauge/document/dsl/Table.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/dk/kalhauge/document/dsl/Text.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/dk/kalhauge/document/handler/Host.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/dk/kalhauge/document/handler/MarkdownHandler.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/dk/kalhauge/org/course/dsl/Course.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/dk/kalhauge/org/course/dsl/Flow.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/dk/kalhauge/org/course/dsl/Objective.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/dk/kalhauge/org/course/dsl/Plan.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/dk/kalhauge/org/course/printers/GitPages.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/dk/kalhauge/util/Gfm.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/dk/kalhauge/util/Resources.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/dk/kalhauge/util/Strings.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/dk/kalhauge/document/dsl/InlineTest.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/ExperimentKt.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/META-INF/course-dsl.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/META-INF/course-dsl.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/ProgramKt$main$course$1$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/ProgramKt$main$course$1$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/ProgramKt$main$course$1$3$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/ProgramKt$main$course$1$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/ProgramKt$main$course$1$4$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/ProgramKt$main$course$1$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/ProgramKt$main$course$1$5$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/ProgramKt$main$course$1$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/ProgramKt$main$course$1$6.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/ProgramKt$main$course$1$7.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/ProgramKt$main$course$1$8.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/ProgramKt$main$course$1$9.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/ProgramKt$main$course$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/ProgramKt.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/dk/kalhauge/course/dsl/Course.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/dk/kalhauge/course/dsl/Course.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/dk/kalhauge/course/dsl/CourseKt$course$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/dk/kalhauge/course/dsl/CourseKt$course$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/dk/kalhauge/course/dsl/CourseKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/dk/kalhauge/course/dsl/CourseKt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/dk/kalhauge/course/dsl/Lecture.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/dk/kalhauge/course/dsl/Lecture.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/dk/kalhauge/course/dsl/LectureKt$lecture$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/dk/kalhauge/course/dsl/LectureKt$lecture$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/dk/kalhauge/course/dsl/LectureKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/dk/kalhauge/course/dsl/LectureKt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/dk/kalhauge/course/dsl/Link.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/dk/kalhauge/course/dsl/Link.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/dk/kalhauge/course/dsl/Resource.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/dk/kalhauge/course/dsl/Resource.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/dk/kalhauge/course/dsl/ResourceKt$resource$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/dk/kalhauge/course/dsl/ResourceKt$slides$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/dk/kalhauge/course/dsl/ResourceKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/dk/kalhauge/course/dsl/ResourceKt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/dk/kalhauge/course/dsl/Section.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/dk/kalhauge/course/dsl/SectionKt$section$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/dk/kalhauge/course/dsl/SectionKt$section$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/dk/kalhauge/course/dsl/SectionKt.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/dk/kalhauge/course/dsl/Semester.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/dk/kalhauge/course/dsl/Semester.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/dk/kalhauge/course/dsl/Target.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/dk/kalhauge/course/dsl/Term.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/dk/kalhauge/course/dsl/Term.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/dk/kalhauge/course/dsl/TimeSlot.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/dk/kalhauge/course/dsl/TimeSlot.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/dk/kalhauge/course/dsl/Week.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/dk/kalhauge/course/dsl/Week.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/dk/kalhauge/course/dsl/WeekKt$week$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/dk/kalhauge/course/dsl/WeekKt$week$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/dk/kalhauge/course/dsl/WeekKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/dk/kalhauge/course/dsl/WeekKt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/dk/kalhauge/course/printers/ConsoleContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/dk/kalhauge/course/printers/ConsoleContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/dk/kalhauge/course/printers/Context$DefaultImpls.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/dk/kalhauge/course/printers/Context$DefaultImpls.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/dk/kalhauge/course/printers/Context.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/dk/kalhauge/course/printers/Context.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/dk/kalhauge/course/printers/FileContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/dk/kalhauge/course/printers/FileContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/dk/kalhauge/course/printers/GitHubPagesVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/dk/kalhauge/course/printers/GitHubPagesVisitor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/dk/kalhauge/course/printers/Visitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/dk/kalhauge/course/printers/Visitor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/dk/kalhauge/course/dsl/Lecture.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/dk/kalhauge/course/dsl/LectureKt$lecture$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/dk/kalhauge/course/dsl/LectureKt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/dk/kalhauge/course/dsl/Link.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/dk/kalhauge/course/dsl/Resource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/dk/kalhauge/course/dsl/ResourceKt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/dk/kalhauge/course/dsl/Semester$WhenMappings.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/dk/kalhauge/course/dsl/Semester.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/dk/kalhauge/course/dsl/Term.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/dk/kalhauge/course/dsl/TimeSlot$WhenMappings.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/dk/kalhauge/course/dsl/TimeSlot.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/dk/kalhauge/course/dsl/TimeSlotKt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/dk/kalhauge/course/dsl/Week.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/dk/kalhauge/course/dsl/WeekDay.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/dk/kalhauge/course/dsl/WeekKt$week$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/dk/kalhauge/course/dsl/WeekKt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/dk/kalhauge/course/printers/ConsoleContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/dk/kalhauge/course/printers/Context$DefaultImpls.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/dk/kalhauge/course/printers/Context.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/dk/kalhauge/course/printers/FileContext.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/dk/kalhauge/course/printers/GitHubPagesVisitor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/dk/kalhauge/course/printers/Visitor.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/build-history.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/build-history.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/inputs/source-to-output.tab.keystream" afterDir="false" />
@@ -134,20 +141,28 @@
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.values.at" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.values.s" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.values.s" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab_i" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab_i.len" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab_i.len" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/last-build.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/last-build.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Experiment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ap/Experiment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Program.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ap/Program.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ap/Experiment.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ap/Program.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ap2019b/Program.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ap/androidFlow.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ap/elmFlow.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ap/kotlinFlow.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dk/kalhauge/course/dsl/Activity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dk/kalhauge/org/course/dsl/Activity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/dk/kalhauge/course/dsl/Course.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dk/kalhauge/course/dsl/Course.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dk/kalhauge/course/dsl/Lecture.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dk/kalhauge/course/dsl/Lecture.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dk/kalhauge/course/dsl/Linking.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dk/kalhauge/course/dsl/Linking.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dk/kalhauge/course/dsl/Objective.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dk/kalhauge/course/dsl/Objective.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dk/kalhauge/course/dsl/Resource.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dk/kalhauge/course/dsl/Resource.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dk/kalhauge/course/dsl/Section.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dk/kalhauge/course/dsl/TimeSlot.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dk/kalhauge/course/dsl/TimeSlot.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dk/kalhauge/course/dsl/Week.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dk/kalhauge/course/dsl/Week.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dk/kalhauge/course/printers/Context.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dk/kalhauge/course/printers/Context.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dk/kalhauge/course/printers/GitPages.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dk/kalhauge/course/printers/GitPages.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dk/kalhauge/course/printers/Visitor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dk/kalhauge/course/printers/Visitor.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dk/kalhauge/course/dsl/Creditable.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dk/kalhauge/org/course/dsl/Creditable.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dk/kalhauge/course/dsl/Flow.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dk/kalhauge/course/dsl/Flow.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dk/kalhauge/course/dsl/Lecture.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dk/kalhauge/org/course/dsl/Lecture.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dk/kalhauge/course/dsl/Linking.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dk/kalhauge/org/course/dsl/Linking.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dk/kalhauge/course/dsl/Objective.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dk/kalhauge/course/dsl/Plan.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dk/kalhauge/course/dsl/General.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dk/kalhauge/course/dsl/Resource.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dk/kalhauge/org/course/dsl/Resource.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dk/kalhauge/course/dsl/TimeSlot.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dk/kalhauge/org/course/dsl/TimeSlot.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dk/kalhauge/course/dsl/Week.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dk/kalhauge/org/course/dsl/Week.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dk/kalhauge/course/printers/Context.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dk/kalhauge/org/course/printers/Context.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dk/kalhauge/course/printers/GitPages.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/dk/kalhauge/course/printers/Visitor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/dk/kalhauge/org/course/printers/Visitor.kt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -166,7 +181,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Class" />
         <option value="Kotlin File" />
+        <option value="Kotlin Interface" />
       </list>
     </option>
   </component>
@@ -180,11 +197,17 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/kotlin/ap2020a" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/kotlin/ap2020a" />
+      <recent name="$PROJECT_DIR$/src/main/kotlin/dk/kalhauge/course/handler" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/kotlin/dk/kalhauge/document/handler" />
       <recent name="$PROJECT_DIR$/src/main/kotlin/ap" />
       <recent name="$PROJECT_DIR$/src/main/kotlin/dk/kalhauge/course/printers" />
     </key>
@@ -201,28 +224,74 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Kotlin.ap.ProgramKt">
-    <configuration name="ap.ExperimentKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Kotlin.ap2019b.ProgramKt">
+    <configuration name="InlineTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;dk.kalhauge.document.dsl.InlineTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="ap2019b.ProgramKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <module name="course-dsl.main" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="ap.ExperimentKt" />
+      <option name="MAIN_CLASS_NAME" value="ap2019b.ProgramKt" />
       <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ap.ProgramKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+    <configuration name="ap2020a.ProgramKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <module name="course-dsl.main" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="ap.ProgramKt" />
+      <option name="MAIN_CLASS_NAME" value="ap2020a.ProgramKt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="dk.kalhauge.document.dsl.InlineKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <module name="course-dsl.main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="dk.kalhauge.document.dsl.InlineKt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="dk.kalhauge.document.handler.MarkdownHandlerKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <module name="course-dsl.main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="dk.kalhauge.document.handler.MarkdownHandlerKt" />
       <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -230,8 +299,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.ap.ProgramKt" />
-        <item itemvalue="Kotlin.ap.ExperimentKt" />
+        <item itemvalue="Kotlin.ap2019b.ProgramKt" />
+        <item itemvalue="Kotlin.dk.kalhauge.document.handler.MarkdownHandlerKt" />
+        <item itemvalue="Kotlin.ap2020a.ProgramKt" />
+        <item itemvalue="Gradle.InlineTest" />
+        <item itemvalue="Kotlin.dk.kalhauge.document.dsl.InlineKt" />
       </list>
     </recent_temporary>
   </component>
@@ -253,7 +325,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570629538526</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="exam, credits, and assignments">
+      <created>1570732293702</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1570732293703</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -271,6 +350,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="formatting" />
-    <option name="LAST_COMMIT_MESSAGE" value="formatting" />
+    <MESSAGE value="exam, credits, and assignments" />
+    <option name="LAST_COMMIT_MESSAGE" value="exam, credits, and assignments" />
   </component>
 </project>
