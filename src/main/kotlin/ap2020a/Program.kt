@@ -12,6 +12,7 @@ fun main() {
     // tuesday(morning)
     // wednesday(afternoon)
     overview = """
+        Hi Dora, do you know:
         There is a difference between developing APIs,
         developing programs, and using them.
         To develop effective and easy-to-use APIs,
