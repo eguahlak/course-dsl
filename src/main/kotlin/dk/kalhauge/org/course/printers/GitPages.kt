@@ -2,11 +2,12 @@ package dk.kalhauge.org.course.printers
 
 import dk.kalhauge.org.course.dsl.*
 import dk.kalhauge.util.anchorize
+import dk.kalhauge.util.from
 import dk.kalhauge.util.nice
 import kotlin.reflect.KClass
 
-class GitHubPagesVisitor(val context: Context) :
-  Visitor {
+class GitHubPagesVisitor(val context: Context) : Visitor {
+
   fun gitWeekLink(week: Week) =
       if (week.active) "[${week.code}](week-${week.code}/info.md)" else week.code
 
@@ -45,6 +46,15 @@ class GitHubPagesVisitor(val context: Context) :
       }
     }
 
+  fun printLocalResources(course: Course, title: String, list: List<Resource>) {
+    if (list.isEmpty()) return
+    with (context) {
+      printLine("###", title)
+      list.forEach { printLine("* [${it.title}](${it.link from "${course.root}course-info.md"})",0) }
+      printLine()
+      }
+    }
+
   override fun visit(course: Course) {
     val onlyCourseInRepo = course.root.isBlank()
     val filename = if (onlyCourseInRepo) "README.md" else "${course.root}course-info.md"
@@ -57,7 +67,7 @@ class GitHubPagesVisitor(val context: Context) :
       course.flows.forEach { visit(it) }
 
       printLine("## Resources")
-      printResources("Slides", course.resources.filter { it is SlideShowResource })
+      printLocalResources(course, "Slides", course.resources.filter { it is SlideShowResource })
       printResources("Repositories", course.resources.filter { it is RepositoryResource })
       printResources("External links", course.resources.filter { it is ExternalLinkResource })
 
@@ -105,6 +115,7 @@ class GitHubPagesVisitor(val context: Context) :
 
   override fun visit(lecture: Lecture) {
     with (context) {
+      val root = lecture.week.flow.course.root
       if (lecture.header != lecture.week.header) printLine("## ${lecture.header}")
       printLine(lecture.overview)
       printLine("### Learning objectives")
@@ -120,7 +131,7 @@ class GitHubPagesVisitor(val context: Context) :
           is Assignment -> {
             if (it.sourcePath.isNotBlank()) {
               updateFile(it.sourcePath, it.link)
-              printLine("* (${it.load}) ${activityHeader(it.type)} [${it.title}](../${it.link})", 0)
+              printLine("* (${it.load}) ${activityHeader(it.type)} [${it.title}](${it.link from "${root}week-xx/info.md"})", 0)
               }
             else printLine("* (${it.load}) ${activityHeader(it.type)} ${it.title}", 0)
             }
@@ -133,7 +144,8 @@ class GitHubPagesVisitor(val context: Context) :
         when (it) {
           is SlideShowResource -> {
             updateFile(it.sourcePath, it.link)
-            printLine("* [${it.title}](../${it.link})", 0)
+            val target = it.link from "${root}week-xx/info.md"
+            printLine("* [${it.title}](${target})", 0)
             }
           else -> printLine("* [${it.title}](${it.link})", 0)
           }

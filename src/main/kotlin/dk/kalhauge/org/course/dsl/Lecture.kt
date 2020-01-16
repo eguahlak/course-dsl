@@ -14,22 +14,23 @@ class Lecture(val week: Week, val title: String) {
   val activities = mutableListOf<Activity>()
   val load by lazy { activities.map { it.load }.sum() }
   val workLoad get() = if (load < 0.0001) "" else "$load"
+  val dots = if (week.flow.course.root.isNullOrBlank()) "" else "../"
 
   fun monday(interval: Pair<String,String>) { timeSlot =
     TimeSlot(WeekDay.MONDAY, interval)
-  }
+    }
   fun tuesday(interval: Pair<String,String>) { timeSlot =
     TimeSlot(WeekDay.TUESDAY, interval)
-  }
+    }
   fun wednesday(interval: Pair<String,String>) { timeSlot =
     TimeSlot(WeekDay.WEDNESDAY, interval)
-  }
+    }
   fun thursday(interval: Pair<String,String>) { timeSlot =
     TimeSlot(WeekDay.THURSDAY, interval)
-  }
+    }
   fun friday(interval: Pair<String,String>) { timeSlot =
     TimeSlot(WeekDay.FRIDAY, interval)
-  }
+    }
 
   val header get() = title
 
