@@ -5,7 +5,7 @@ abstract class Resource(val lecture: Lecture, var toFront: Boolean) : Link {
   override var active = true
   }
 
-class SlideShowResource(lecture: Lecture, toFront: Boolean, val sourcePath: String)
+class PresentationResource(lecture: Lecture, toFront: Boolean, val sourcePath: String)
   : Resource(lecture, toFront) {
   override val category = "slide-show"
   override var title = sourcePath.substringAfterLast("/")
@@ -31,11 +31,11 @@ class ExternalLinkResource(lecture: Lecture, toFront: Boolean, val sourcePath: S
   override val link = sourcePath
   }
 
-fun Lecture.slideShow(sourcePath: String, build: SlideShowResource.() -> Unit = { } ): SlideShowResource {
-  val slideShow = SlideShowResource(this, true, sourcePath)
-  slideShow.build()
-  add(slideShow)
-  return slideShow
+fun Lecture.presentation(sourcePath: String, build: PresentationResource.() -> Unit = { } ): PresentationResource {
+  val presentation = PresentationResource(this, true, sourcePath)
+  presentation.build()
+  add(presentation)
+  return presentation
   }
 
 fun Lecture.exercise(sourcePath: String, build: ExerciseResource.() -> Unit = { } ): ExerciseResource {

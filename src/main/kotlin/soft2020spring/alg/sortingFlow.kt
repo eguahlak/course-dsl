@@ -1,7 +1,6 @@
 package soft2020spring.alg
 
 import dk.kalhauge.org.course.dsl.*
-import dk.kalhauge.util.image
 
 fun Course.sortingFlow() = flow("Sorting") {
   text = """
@@ -14,7 +13,7 @@ fun Course.sortingFlow() = flow("Sorting") {
     active = true
     lecture("Introduction") {
       objective = "To get an idea of the course content"
-      slideShow("$slideRoot/00-introduction/00-introduction-handouts.pdf")
+      presentation("$slideRoot/00-introduction/00-introduction-handouts.pdf")
       exercise("$slideRoot/00-introduction/exercise-example.pdf")
       }
     }
