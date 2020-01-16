@@ -41,7 +41,7 @@ class GitHubPagesVisitor(val context: Context) : Visitor {
     if (list.isEmpty()) return
     with (context) {
       printLine("###", title)
-      list.forEach { printLine("* [${it.title}](${it.link})",0) }
+      list.filter { it.toFront }.forEach { printLine("* [${it.title}](${it.link})",0) }
       printLine()
       }
     }
@@ -50,7 +50,9 @@ class GitHubPagesVisitor(val context: Context) : Visitor {
     if (list.isEmpty()) return
     with (context) {
       printLine("###", title)
-      list.forEach { printLine("* [${it.title}](${it.link from "${course.root}course-info.md"})",0) }
+      list
+          .filter { it.toFront }
+          .forEach { printLine("* [${it.title}](${it.link from "${course.root}course-info.md"})",0) }
       printLine()
       }
     }
@@ -67,7 +69,8 @@ class GitHubPagesVisitor(val context: Context) : Visitor {
       course.flows.forEach { visit(it) }
 
       printLine("## Resources")
-      printLocalResources(course, "Slides", course.resources.filter { it is SlideShowResource })
+      printLocalResources(course, "Presentations", course.resources.filter { it is SlideShowResource })
+      printLocalResources(course, "Exercises", course.resources.filter { it is ExerciseResource })
       printResources("Repositories", course.resources.filter { it is RepositoryResource })
       printResources("External links", course.resources.filter { it is ExternalLinkResource })
 
@@ -143,6 +146,11 @@ class GitHubPagesVisitor(val context: Context) : Visitor {
       lecture.resources.forEach {
         when (it) {
           is SlideShowResource -> {
+            updateFile(it.sourcePath, it.link)
+            val target = it.link from "${root}week-xx/info.md"
+            printLine("* [${it.title}](${target})", 0)
+            }
+          is ExerciseResource -> {
             updateFile(it.sourcePath, it.link)
             val target = it.link from "${root}week-xx/info.md"
             printLine("* [${it.title}](${target})", 0)

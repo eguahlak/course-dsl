@@ -12,6 +12,13 @@ class SlideShowResource(lecture: Lecture, toFront: Boolean, val sourcePath: Stri
   override val link = "resources/${sourcePath.substringAfterLast("/")}"
   }
 
+class ExerciseResource(lecture: Lecture, toFront: Boolean, val sourcePath: String)
+  : Resource(lecture, toFront) {
+  override val category = "exercise"
+  override var title = sourcePath.substringAfterLast("/")
+  override val link = "resources/${sourcePath.substringAfterLast("/")}"
+  }
+
 class RepositoryResource(lecture: Lecture, toFront: Boolean, val sourcePath: String) : Resource(lecture, toFront) {
   override val category = "repository"
   override var title = sourcePath.substringAfter(".com/")
@@ -29,6 +36,13 @@ fun Lecture.slideShow(sourcePath: String, build: SlideShowResource.() -> Unit = 
   slideShow.build()
   add(slideShow)
   return slideShow
+  }
+
+fun Lecture.exercise(sourcePath: String, build: ExerciseResource.() -> Unit = { } ): ExerciseResource {
+  val exercise = ExerciseResource(this, false, sourcePath)
+  exercise.build()
+  add(exercise)
+  return exercise
   }
 
 fun Lecture.repository(sourcePath: String, build: RepositoryResource.() -> Unit = { } ): RepositoryResource {

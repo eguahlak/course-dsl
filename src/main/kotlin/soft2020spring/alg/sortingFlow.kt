@@ -15,6 +15,7 @@ fun Course.sortingFlow() = flow("Sorting") {
     lecture("Introduction") {
       objective = "To get an idea of the course content"
       slideShow("$slideRoot/00-introduction/00-introduction-handouts.pdf")
+      exercise("$slideRoot/00-introduction/exercise-example.pdf")
       }
     }
   /*
