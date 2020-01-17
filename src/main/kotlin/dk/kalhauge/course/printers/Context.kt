@@ -1,4 +1,4 @@
-package dk.kalhauge.org.course.printers
+package dk.kalhauge.course.printers
 
 import dk.kalhauge.util.stackOf
 import java.io.File

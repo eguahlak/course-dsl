@@ -1,4 +1,4 @@
-package dk.kalhauge.org.course.dsl
+package dk.kalhauge.course.dsl
 
 enum class Taxonomy {
   KNOWLEDGE, ABILITY, SKILL/*, ANALYSIS, SYNTHESIS, EVALUATION */

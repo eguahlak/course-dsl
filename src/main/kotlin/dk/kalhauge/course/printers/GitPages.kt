@@ -1,12 +1,13 @@
-package dk.kalhauge.org.course.printers
+package dk.kalhauge.course.printers
 
-import dk.kalhauge.org.course.dsl.*
+import dk.kalhauge.course.dsl.*
 import dk.kalhauge.util.anchorize
 import dk.kalhauge.util.from
 import dk.kalhauge.util.nice
 import kotlin.reflect.KClass
 
-class GitHubPagesVisitor(val context: Context) : Visitor {
+class GitHubPagesVisitor(val context: Context) :
+    Visitor {
 
   fun gitWeekLink(week: Week) =
       if (week.active) "[${week.code}](week-${week.code}/info.md)" else week.code

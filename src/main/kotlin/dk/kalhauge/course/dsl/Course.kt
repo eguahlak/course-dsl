@@ -1,6 +1,4 @@
-package dk.kalhauge.org.course.dsl
-
-import kotlin.reflect.KClass
+package dk.kalhauge.course.dsl
 
 enum class Term { SPRING, FALL }
 
@@ -11,9 +9,11 @@ class Semester(val year: Int, val term: Term) {
     }
   }
 
-fun spring(year: Int) = Semester(year, Term.SPRING)
+fun spring(year: Int) =
+    Semester(year, Term.SPRING)
 
-fun fall(year: Int) = Semester(year, Term.FALL)
+fun fall(year: Int) =
+    Semester(year, Term.FALL)
 
 class Course(val title: String, val semester: Semester, val root: String) {
   var overview: String? = null

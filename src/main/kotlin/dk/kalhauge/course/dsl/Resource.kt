@@ -1,6 +1,7 @@
-package dk.kalhauge.org.course.dsl
+package dk.kalhauge.course.dsl
 
-abstract class Resource(val lecture: Lecture, var toFront: Boolean) : Link {
+abstract class Resource(val lecture: Lecture, var toFront: Boolean) :
+    Link {
   abstract val category: String
   override var active = true
   }

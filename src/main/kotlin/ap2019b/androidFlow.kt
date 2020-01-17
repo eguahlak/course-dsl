@@ -1,5 +1,6 @@
 package ap2019b
 
+import dk.kalhauge.course.dsl.*
 import dk.kalhauge.org.course.dsl.*
 
 fun Course.androidFlow() =    flow("Android") {

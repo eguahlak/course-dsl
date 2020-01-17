@@ -1,5 +1,6 @@
 package soft2020spring.ai
 
+import dk.kalhauge.course.dsl.*
 import dk.kalhauge.org.course.dsl.*
 
 fun Course.aiFlow() = flow("Kotlin") {

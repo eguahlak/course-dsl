@@ -1,5 +1,6 @@
 package soft2020spring.alg
 
+import dk.kalhauge.course.dsl.*
 import dk.kalhauge.org.course.dsl.*
 
 fun Course.sortingFlow() = flow("Sorting") {

@@ -1,7 +1,7 @@
 package dk.kalhauge.util
 
-import dk.kalhauge.org.course.dsl.Course
-import dk.kalhauge.org.course.dsl.Week
+import dk.kalhauge.course.dsl.Course
+import dk.kalhauge.course.dsl.Week
 import java.lang.Math.abs
 
 fun String.anchorize() = toLowerCase().replace("[^a-z0-9]+".toRegex(), "-")
