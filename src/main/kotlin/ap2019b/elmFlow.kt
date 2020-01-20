@@ -1,5 +1,6 @@
 package ap2019b
 
+import dk.kalhauge.course.dsl.*
 import dk.kalhauge.org.course.dsl.*
 
 fun Course.elmFlow() = flow("Elm") {
@@ -19,19 +20,19 @@ fun Course.elmFlow() = flow("Elm") {
       """.trimIndent()
   week(46) {
     lecture("Basics") {
-      understands("pros and cons of the functional paradigm", true)
+      ability("pros and cons of the functional paradigm", true)
       read("Core Language in Elm Official Guide", 2.0)
       work("exercises TBD", 2.0)
 
-      slideShow("$slideRoot/07-elm/07-elm-handouts.pdf")
+      presentation("$slideRoot/07-elm/07-elm-handouts.pdf")
       externalLink("https://guide.elm-lang.org") {
         title = "Elm Official Guide"
         }
       }
     lecture("Elm architecture") {
-      knows("what a pure function is, and why it is important")
-      understands("higher order functions", true)
-      understands("the influence of sideeffects")
+      knowledge("what a pure function is, and why it is important")
+      ability("higher order functions", true)
+      ability("the influence of sideeffects")
 
       overview = """
         ```elm
@@ -72,7 +73,7 @@ fun Course.elmFlow() = flow("Elm") {
     }
   week(47) {
     lecture("Restful web services") {
-      masters("the Elm communication api")
+      skill("the Elm communication api")
 
       read("Commands and Subscriptions -> HTTP in Elm Official Guide", 2.5)
       work("exercises TBD", 2.5)
@@ -91,8 +92,8 @@ fun Course.elmFlow() = flow("Elm") {
   week(48) {
     lecture("Elm recap") {
       note = "Project 2"
-      masters("the Elm programming language")
-      synthesis("a client-server application from using two new languages", true)
+      skill("the Elm programming language")
+      skill("a client-server application from using two new languages", true)
 
       externalLink("https://youtu.be/F9BunUsqDcs") {
         title = "Elm SPA tutorial part 1 (*OBS*: Elm 0.18)"

@@ -1,12 +1,14 @@
-package dk.kalhauge.org.course.printers
+package dk.kalhauge.course.printers
 
-import dk.kalhauge.org.course.dsl.*
+import dk.kalhauge.course.dsl.*
 import dk.kalhauge.util.anchorize
+import dk.kalhauge.util.from
 import dk.kalhauge.util.nice
 import kotlin.reflect.KClass
 
 class GitHubPagesVisitor(val context: Context) :
-  Visitor {
+    Visitor {
+
   fun gitWeekLink(week: Week) =
       if (week.active) "[${week.code}](week-${week.code}/info.md)" else week.code
 
@@ -15,19 +17,16 @@ class GitHubPagesVisitor(val context: Context) :
       else "${lecture.code} ${lecture.title}"
 
   fun resourceHeader(type: KClass<Resource>) = when (type) {
-    SlideShowResource::class -> "Slides"
+    PresentationResource::class -> "Slides"
     RepositoryResource::class -> "Repositories"
     ExternalLinkResource::class -> "External links"
     else -> "Other resources"
     }
 
-  fun taxonomiHeader(taxonomi: Taxonomi) = when (taxonomi) {
-    Taxonomi.KNOWLEDGE -> "_know_"
-    Taxonomi.COMPREHENSION -> "_understand_"
-    Taxonomi.APPLICATION -> "_master_"
-    Taxonomi.ANALYSIS -> "be able to _analyse_"
-    Taxonomi.SYNTHESIS -> "be able to _build_"
-    Taxonomi.EVALUATION -> "be able to _evaluate_"
+  fun taxonomiHeader(taxonomy: Taxonomy) = when (taxonomy) {
+    Taxonomy.KNOWLEDGE -> "_know_"
+    Taxonomy.ABILITY -> "have the _ability_ to do"
+    Taxonomy.SKILL -> "have the _skills_ to examine"
     }
 
   fun activityHeader(type: ActivityType) = when (type) {
@@ -40,7 +39,18 @@ class GitHubPagesVisitor(val context: Context) :
     if (list.isEmpty()) return
     with (context) {
       printLine("###", title)
-      list.forEach { printLine("* [${it.title}](${it.link})",0) }
+      list.filter { it.toFront }.forEach { printLine("* [${it.title}](${it.link})",0) }
+      printLine()
+      }
+    }
+
+  fun printLocalResources(course: Course, title: String, list: List<Resource>) {
+    if (list.isEmpty()) return
+    with (context) {
+      printLine("###", title)
+      list
+          .filter { it.toFront }
+          .forEach { printLine("* [${it.title}](${it.link from "${course.root}course-info.md"})",0) }
       printLine()
       }
     }
@@ -52,12 +62,24 @@ class GitHubPagesVisitor(val context: Context) :
       open(filename)
       if (!onlyCourseInRepo) printLine("# ${course.title} - ${course.semester}")
       printLine(course.overview)
+      printLine()
+      printLine("## Main objectives")
+      printLine(course.objective)
+      val objectives = course.objectives
+      if (objectives.size == 0) {
+        printLine("* Main objectives will show here")
+        }
+      objectives.sortedBy { it.level }.forEach {
+        printLine("* ${taxonomiHeader(it.level)} ${it.title}", 0)
+        }
+      printLine()
       printLine("## Plan")
       printLine(course.plan)
       course.flows.forEach { visit(it) }
 
       printLine("## Resources")
-      printResources("Slides", course.resources.filter { it is SlideShowResource })
+      printLocalResources(course, "Presentations", course.resources.filter { it is PresentationResource })
+      printLocalResources(course, "Exercises", course.resources.filter { it is ExerciseResource })
       printResources("Repositories", course.resources.filter { it is RepositoryResource })
       printResources("External links", course.resources.filter { it is ExternalLinkResource })
 
@@ -73,16 +95,6 @@ class GitHubPagesVisitor(val context: Context) :
         }
       if (sum < 100.0) {
         printLine("| Assignments | ${100.0 - sum} |", 0)
-        }
-      printLine()
-      printLine("## Main objectives")
-      printLine(course.objective)
-      val objectives = course.objectives
-      if (objectives.size == 0) {
-        printLine("* Main objectives will show here")
-        }
-      objectives.forEach {
-        printLine("* ${taxonomiHeader(it.level)} ${it.title}", 0)
         }
       printLine()
       printLine("## Exam")
@@ -105,11 +117,12 @@ class GitHubPagesVisitor(val context: Context) :
 
   override fun visit(lecture: Lecture) {
     with (context) {
+      val root = lecture.week.flow.course.root
       if (lecture.header != lecture.week.header) printLine("## ${lecture.header}")
       printLine(lecture.overview)
       printLine("### Learning objectives")
       printLine(lecture.objective)
-      lecture.objectives.forEach {
+      lecture.objectives.sortedBy { it.level }.forEach {
         printLine("* ${taxonomiHeader(it.level)} ${it.title}", 0)
         }
       printLine()
@@ -120,7 +133,7 @@ class GitHubPagesVisitor(val context: Context) :
           is Assignment -> {
             if (it.sourcePath.isNotBlank()) {
               updateFile(it.sourcePath, it.link)
-              printLine("* (${it.load}) ${activityHeader(it.type)} [${it.title}](../${it.link})", 0)
+              printLine("* (${it.load}) ${activityHeader(it.type)} [${it.title}](${it.link from "${root}week-xx/info.md"})", 0)
               }
             else printLine("* (${it.load}) ${activityHeader(it.type)} ${it.title}", 0)
             }
@@ -131,9 +144,15 @@ class GitHubPagesVisitor(val context: Context) :
       printLine("### Resources")
       lecture.resources.forEach {
         when (it) {
-          is SlideShowResource -> {
+          is PresentationResource -> {
             updateFile(it.sourcePath, it.link)
-            printLine("* [${it.title}](../${it.link})", 0)
+            val target = it.link from "${root}week-xx/info.md"
+            printLine("* [${it.title}](${target})", 0)
+            }
+          is ExerciseResource -> {
+            updateFile(it.sourcePath, it.link)
+            val target = it.link from "${root}week-xx/info.md"
+            printLine("* [${it.title}](${target})", 0)
             }
           else -> printLine("* [${it.title}](${it.link})", 0)
           }
@@ -188,21 +207,20 @@ class GitHubPagesVisitor(val context: Context) :
       printLine()
 
       printLine("### Knowledge (Viden)")
-      course.lectures.flatMap { it.objectives }.filter {it.level == Taxonomi.KNOWLEDGE} .forEach {
+      course.lectures.flatMap { it.objectives }.filter {it.level == Taxonomy.KNOWLEDGE} .forEach {
         if (it.toFront) printLine("* **${taxonomiHeader(it.level)} ${it.title}**", 0)
         else printLine("* ${taxonomiHeader(it.level)} ${it.title}", 0)
         }
       printLine()
       printLine("### Abilities (Færdigheder)")
-      course.lectures.flatMap { it.objectives }.filter {it.level == Taxonomi.COMPREHENSION} .forEach {
+      course.lectures.flatMap { it.objectives }.filter {it.level == Taxonomy.ABILITY} .forEach {
         if (it.toFront) printLine("* **${taxonomiHeader(it.level)} ${it.title}**", 0)
         else printLine("* ${taxonomiHeader(it.level)} ${it.title}", 0)
         }
       printLine()
       printLine("### Skills (Kompetencer)")
-      val skillTaxonomies = listOf(Taxonomi.APPLICATION, Taxonomi.EVALUATION, Taxonomi.SYNTHESIS, Taxonomi.ANALYSIS)
       course.lectures.flatMap { it.objectives }
-        .filter { it.level in skillTaxonomies }
+        .filter { it.level == Taxonomy.SKILL }
         .forEach {
         if (it.toFront) printLine("* **${taxonomiHeader(it.level)} ${it.title}**", 0)
         else printLine("* ${taxonomiHeader(it.level)} ${it.title}", 0)

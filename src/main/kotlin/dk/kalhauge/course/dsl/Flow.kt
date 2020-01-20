@@ -1,4 +1,4 @@
-package dk.kalhauge.org.course.dsl
+package dk.kalhauge.course.dsl
 
 class Flow(val course: Course, var title: String?) {
   var text: String? = null

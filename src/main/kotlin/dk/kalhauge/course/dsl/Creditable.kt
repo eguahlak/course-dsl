@@ -1,4 +1,4 @@
-package dk.kalhauge.org.course.dsl
+package dk.kalhauge.course.dsl
 
 interface Creditable {
   val title: String
@@ -10,13 +10,14 @@ class Attendance(override val credits: Double) : Creditable {
   }
 
 class Assignment(
-  lecture: Lecture,
-  title: String,
-  val sourcePath: String,
-  load: Double,
-  override val credits: Double
-    ) : Activity(lecture, title, ActivityType.WORK, load),
-  Creditable, Link {
+    lecture: Lecture,
+    title: String,
+    val sourcePath: String,
+    load: Double,
+    override val credits: Double
+    ) : Activity(lecture, title,
+    ActivityType.WORK, load),
+    Creditable, Link {
   var visible = true
   var text: String? = null // TODO: generate page if text != null
   override val active get() = link.isNotEmpty() && visible

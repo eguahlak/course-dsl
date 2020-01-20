@@ -1,7 +1,7 @@
 package soft2020spring.ai
 
+import dk.kalhauge.course.dsl.*
 import dk.kalhauge.org.course.dsl.*
-import dk.kalhauge.util.image
 
 fun Course.aiFlow() = flow("Kotlin") {
   text = """
@@ -20,7 +20,7 @@ fun Course.aiFlow() = flow("Kotlin") {
     lecture("Introduction") {
       objective = "To get an idea of the course content"
       // slideShow("resources/00-kotlin.pdf")
-      slideShow("$slideRoot/l01.pdf")
+      presentation("$slideRoot/l01.pdf")
       }
     }
   /*
