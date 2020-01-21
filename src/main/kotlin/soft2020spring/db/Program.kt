@@ -1,12 +1,11 @@
-package soft2020spring.ai
+package soft2020spring.db
 
 import dk.kalhauge.course.dsl.*
 import dk.kalhauge.course.printers.FileContext
 import dk.kalhauge.course.printers.GitHubPagesVisitor
 import dk.kalhauge.util.anchorize
 
-val localRoot = "/Users/tdi/Documents/Teaching/AI/2020/"
-val gitRoot = "https://github.com/datsoftlyngby/datsoftlyngby/soft2020spring-AI/"
+val slideRoot = "/Users/tdi/Documents/Teaching/DB/2020/Presentations/"
 
 fun main() {
   val course = course("Artificial Intelligence", spring(2020), root = "AI/")
@@ -14,38 +13,56 @@ fun main() {
       // tuesday(morning)
       wednesday(afternoon)
       overview = """
-        This course ...
+        This cource ...
         """.trimIndent()
 
       plan = """
       The course content is divided into three main streams: Artificial Intelligence, Machine Learning, and Deep Learning. ...
       """.trimIndent()
 
-      aiFlow()
-      flow("AI")
+      sqlFlow()
+      flow("SQL")
       {
-        week(5)
+        week(6)
         {
-          lecture("Introduction to AI")
+          lecture("SQL Recap")
         }
       }
 
-      mlFlow()
-      flow("ML")
+      hbaseFlow()
+      flow("HBase")
       {
-        week(7)
+        week(10)
         {
-          lecture("Supervised ML")
+          lecture("HBASE")
         }
       }
 
-      dlFlow()
-      flow("DL")
+      mongoFlow()
+      flow("Mongo DB")
       {
-        week(11)
+        week(12)
         {
-          lecture("Introduction to AI")
+          lecture("MongoDB")
         }
+      }
+
+      neoFlow()
+      flow("Neo4j")
+      {
+          week(16)
+          {
+              lecture("Neo4J")
+          }
+      }
+
+      redisFlow()
+      flow("Redis")
+      {
+          week(19)
+          {
+              lecture("Redis")
+          }
       }
       // attendance(20.0)
 
