@@ -31,7 +31,7 @@ fun Course.dlFlow() = flow("Deep Learning")
       exercise("$localRoot/Exercises/Ex1-3.pdf")
       assignment(
         "Homework 1: Create ...",
-        sourcePath = "$localRoot/Homeworks/HW1.pdf",
+        sourcePath = "$localRoot/Assignments/HW1.pdf",
         load = 5.0,
         credits = 0.0
       )
@@ -64,7 +64,19 @@ fun Course.dlFlow() = flow("Deep Learning")
 
     }
   }
-  week(20) {title = "Project Work"}
-  week(21) {title = "Project Work"}
-  week(22) {title = "Project Work"}
+
+  week(20)
+  { title = "Project Work"
+    active = true
+  }
+
+  week(21)
+  { title = "Project Work"
+    active = true
+  }
+
+  week(22)
+  { title = "Project Work"
+      active = true
+  }
 }

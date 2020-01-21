@@ -5,19 +5,20 @@ import dk.kalhauge.course.printers.FileContext
 import dk.kalhauge.course.printers.GitHubPagesVisitor
 import dk.kalhauge.util.anchorize
 
-val slideRoot = "/Users/tdi/Documents/Teaching/DB/2020/Presentations/"
+val localRoot = "/Users/tdi/Documents/Teaching/DB/2020/"
+val gitRoot = "http://github.com/datsoftlyngby/soft2020spring-DB/"
 
 fun main() {
-  val course = course("Artificial Intelligence", spring(2020), root = "AI/")
+  val course = course("Databases for Developers", spring(2020), root = "DB/")
   {
-      // tuesday(morning)
-      wednesday(afternoon)
+      thursday(morning)
+      //wednesday(afternoon)
       overview = """
         This cource ...
         """.trimIndent()
 
       plan = """
-      The course content is divided into three main streams: Artificial Intelligence, Machine Learning, and Deep Learning. ...
+      The course content is divided into two main streams: SQL Databases and NoSQL Databases. ...
       """.trimIndent()
 
       sqlFlow()

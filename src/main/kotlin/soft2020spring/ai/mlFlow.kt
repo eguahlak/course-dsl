@@ -31,7 +31,7 @@ fun Course.mlFlow() = flow("Machine Learning")
       exercise("$localRoot/Exercises/Ex1-3.pdf")
       assignment(
         "Homework 1: Create ...",
-        sourcePath = "$localRoot/Homeworks/HW1.pdf",
+        sourcePath = "$localRoot/Assignments/HW1.pdf",
         load = 5.0,
         credits = 0.0
       )
@@ -65,5 +65,8 @@ fun Course.mlFlow() = flow("Machine Learning")
     }
   }
 
-  week(15) {title = "**Easter Break**"}
+  week(15)
+  { title = "**Easter Break**"
+    active = true
+  }
 }

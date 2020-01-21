@@ -31,7 +31,7 @@ fun Course.aiFlow() = flow("AI")
       exercise("$localRoot/Exercises/Ex1-3.pdf")
       assignment(
         "Homework 1: Create ...",
-        sourcePath = "$localRoot/Homeworks/HW1.pdf",
+        sourcePath = "$localRoot/Assignments/HW1.pdf",
         load = 5.0,
         credits = 0.0
       )
@@ -84,7 +84,7 @@ fun Course.aiFlow() = flow("AI")
         exercise("$localRoot/Exercises/Ex2-3.pdf")
         assignment(
           "Homework 2: Create ...",
-          sourcePath = "$localRoot/Homeworks/HW2.pdf",
+          sourcePath = "$localRoot/Assignments/HW2.pdf",
           load = 5.0,
           credits = 0.0
         )
@@ -137,7 +137,7 @@ fun Course.aiFlow() = flow("AI")
           exercise("$localRoot/Exercises/Ex3-3.pdf")
           assignment(
             "Homework 3: Create ...",
-            sourcePath = "$localRoot/Homeworks/HW3.pdf",
+            sourcePath = "$localRoot/Assignments/HW3.pdf",
             load = 5.0,
             credits = 0.0
           )
