@@ -1,7 +1,7 @@
 package ap2019b
 
 import dk.kalhauge.course.dsl.*
-import dk.kalhauge.org.course.dsl.*
+//import dk.kalhauge.org.course.dsl.*
 import dk.kalhauge.course.printers.FileContext
 import dk.kalhauge.course.printers.GitHubPagesVisitor
 import dk.kalhauge.util.anchorize

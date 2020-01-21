@@ -3,7 +3,7 @@ package ap2020a
 import dk.kalhauge.course.dsl.attendance
 import dk.kalhauge.course.dsl.course
 import dk.kalhauge.course.dsl.spring
-import dk.kalhauge.org.course.dsl.*
+// import dk.kalhauge.org.course.dsl.*
 import dk.kalhauge.course.printers.FileContext
 import dk.kalhauge.course.printers.GitHubPagesVisitor
 import dk.kalhauge.util.anchorize

@@ -1,21 +1,26 @@
-package soft2020spring.alg
+package soft2020spring.ai
 
 import dk.kalhauge.course.dsl.*
 // import dk.kalhauge.org.course.dsl.*
 
-fun Course.sortingFlow() = flow("Sorting") {
+fun Course.dlFlow() = flow("Kotlin") {
   text = """
-      Here we will look at sorting data
+      We will look at basis and the advanced topics of the programming language Kotlin.
+      There will be examples on how the same or similar features are implemented in 
+      languages as C#, Java, and JS.
       """.trimIndent()
   skills = """
-      Some skills earned for real life
+      Learning a new language is an important skill in an ever changing world.
+      Also Kotlin has taken the best from most programming paradigms,
+      knowing these and being able to relate them to other programming languages is a spoken for skill.
       """.trimIndent()
+
   week(6) {
     active = true
     lecture("Introduction") {
       objective = "To get an idea of the course content"
-      presentation("$slideRoot/00-introduction/00-introduction-handouts.pdf")
-      exercise("$slideRoot/00-introduction/exercise-example.pdf")
+      // slideShow("resources/00-kotlin.pdf")
+      presentation("$slideRoot/l01.pdf")
       }
     }
   /*
