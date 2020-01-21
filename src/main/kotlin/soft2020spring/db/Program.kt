@@ -6,7 +6,7 @@ import dk.kalhauge.course.printers.GitHubPagesVisitor
 import dk.kalhauge.util.anchorize
 
 val localRoot = "/Users/tdi/Documents/Teaching/DB/2020/"
-val gitRoot = "http://github.com/datsoftlyngby/soft2020spring-DB/"
+val gitRoot = "https://github.com/datsoftlyngby/soft2020spring-DB/"
 
 fun main() {
   val course = course("Databases for Developers", spring(2020), root = "DB/")
