@@ -51,9 +51,6 @@ fun Course.aiFlow() = flow("Artificial Intelligence")
           work("Exercise 3", 0.50)
           read("Reading Task", 0.30)
           write("Your answers on the reading task", 0.50)
-          work("Homework Assignment 1", 2.0)
-          work("selfstudy", 4.0)
-
           assignment(
               "Homework Assignment 1: Create ...",
               sourcePath = "$localRoot/Assignments/HW1.pdf",
@@ -66,7 +63,7 @@ fun Course.aiFlow() = flow("Artificial Intelligence")
               load = 15.0,
               credits = 30.0
           )
-
+          work("selfstudy", 4.0)
 
       }
   }
