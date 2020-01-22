@@ -25,4 +25,18 @@ fun Course.redisFlow() = flow("Redis")
         lecture("NoSql Multidatabase Project Presentation")
         {}
     }
+
+    week(21)
+    {
+        active = true
+        lecture("Exam Project")
+        {}
+    }
+
+    week(22)
+    {
+        active = true
+        lecture("Exam Project")
+        {}
+    }
 }
