@@ -25,10 +25,10 @@ fun Course.mlFlow() = flow("Machine Learning")
       overview = """
         Agenda here
         """.trimIndent()
-      presentation("$localRoot/Presentations/ml1.pdf")
+      presentation("$localRoot/Presentations/ai1.pdf")
       exercise("$localRoot/Exercises/Ex1-1.pdf")
-      exercise("$localRoot/Exercises/Ex1-2.pdf")
-      exercise("$localRoot/Exercises/Ex1-3.pdf")
+      exercise("$localRoot/Exercises/Ex1-1.pdf")
+      exercise("$localRoot/Exercises/Ex1-1.pdf")
       assignment(
         "Homework 1: Create ...",
         sourcePath = "$localRoot/Assignments/HW1.pdf",
@@ -37,7 +37,7 @@ fun Course.mlFlow() = flow("Machine Learning")
       )
       assignment(
         "Mini project 2: Create ...",
-        sourcePath = "$localRoot/Assignments/MP2.pdf",
+        sourcePath = "$localRoot/Assignments/MP1.pdf",
         load = 15.0,
         credits = 30.0
       )
@@ -50,7 +50,7 @@ fun Course.mlFlow() = flow("Machine Learning")
       work("Assignment 2", 2.0)
       work("selfstudy", 4.0)
 
-      repository("$gitRoot/")
+      repository("$gitRoot")
       externalLink("http://cphbusiness.dk")
       {
         toFront = true
@@ -61,7 +61,6 @@ fun Course.mlFlow() = flow("Machine Learning")
         toFront = true
         title = "Test Link"
       }
-
     }
   }
 

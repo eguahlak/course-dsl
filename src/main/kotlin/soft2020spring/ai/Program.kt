@@ -3,11 +3,10 @@ package soft2020spring.ai
 import dk.kalhauge.course.dsl.*
 import dk.kalhauge.course.printers.FileContext
 import dk.kalhauge.course.printers.GitHubPagesVisitor
-import dk.kalhauge.util.*
-// import dk.kalhauge.util.anchorize
+import dk.kalhauge.util.anchorize
 
 val localRoot = "/Users/tdi/Documents/Teaching/AI/2020/"
-val gitRoot = "https://github.com/datsoftlyngby/datsoftlyngby/soft2020spring-AI/"
+val gitRoot = "https://github.com/datsoftlyngby/soft2020spring-AI/"
 
 fun main() {
   val course = course("Artificial Intelligence", spring(2020), root = "AI/")
