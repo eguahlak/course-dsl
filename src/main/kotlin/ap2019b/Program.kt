@@ -1,7 +1,6 @@
 package ap2019b
 
 import dk.kalhauge.course.dsl.*
-import dk.kalhauge.org.course.dsl.*
 import dk.kalhauge.course.printers.FileContext
 import dk.kalhauge.course.printers.GitHubPagesVisitor
 import dk.kalhauge.util.anchorize
@@ -9,11 +8,7 @@ import dk.kalhauge.util.anchorize
 val slideRoot = "/Users/AKA/DatSoftLyngby/dat4sem2019fall-advanced-programming/slides"
 
 fun main() {
-  val course = course(
-      "Avanceret Programmering",
-      fall(2019),
-      ""
-  ) {
+  val course = course("Avanceret Programmering", fall(2019), "") {
       tuesday(morning)
       wednesday(afternoon)
       overview = """
@@ -46,6 +41,14 @@ fun main() {
       kotlinFlow()
       elmFlow()
       androidFlow()
+
+      flow("Tobias") {
+        text = "Hej Tobias"
+        skills = "None whatsoever"
+        week(52) {
+          lecture("How to create a plan")
+          }
+        }
 
       attendance(20.0)
 
