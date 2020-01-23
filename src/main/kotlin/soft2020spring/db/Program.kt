@@ -15,19 +15,19 @@ fun main() {
       thursday("08:30" to "14:00")
       //wednesday(afternoon)
       overview = """
-        This cource ...
+        This is a mandatory course for Software Development students, following the Bachelor Degree programme.
         """.trimIndent()
 
       plan = """
-      The course content is divided into two main streams: __SQL Databases__ and __NoSQL Databases__. ...
+      The course content is divided into two main streams: __SQL Databases__ and __NoSQL Databases__.
       """.trimIndent()
 
+      // Flows
       sqlFlow()
       hbaseFlow()
       mongoFlow()
       neoFlow()
       redisFlow()
-
 
       exam = """
       Oral exam, based on a group exam project.

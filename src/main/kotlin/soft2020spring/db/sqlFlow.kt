@@ -9,7 +9,7 @@ fun Course.sqlFlow() = flow("SQL Databases")
       You will be working with programming units, transaction management, and execution plans, to get prepared for data-centered development solutions and jobs.
       """.trimIndent()
     skills = """
-      Profficiency in database design and development is an advantage in an ever changing digital world.
+      Proficiency in database design and development is an advantage in an ever changing digital world.
       """.trimIndent()
 
     week(6)
