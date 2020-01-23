@@ -22,32 +22,8 @@ fun main() {
       """.trimIndent()
 
       aiFlow()
-      /*flow("AI")
-      {
-        week(6)
-        {
-          lecture("Introduction to AI")
-        }
-      }*/
-
       mlFlow()
-      /*flow("ML")
-      {
-        week(7)
-        {
-          lecture("Introduction to ML")
-        }
-      }*/
-
       dlFlow()
-      /*flow("DL")
-      {
-        week(11)
-        {
-          lecture("Introduction to DL")
-        }
-      }*/
-      // attendance(20.0)
 
       exam = """
       Oral exam, based on a group exam project.

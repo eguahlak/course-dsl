@@ -23,58 +23,11 @@ fun main() {
       """.trimIndent()
 
       sqlFlow()
-      /*flow("SQL")
-      {
-        week(6)
-        {
-          lecture("SQL Recap")
-        }
-      }
-*/
       hbaseFlow()
-/*
-      flow("HBase")
-      {
-        week(10)
-        {
-          lecture("HBASE")
-        }
-      }
-*/
-
       mongoFlow()
-/*
-      flow("Mongo DB")
-      {
-        week(12)
-        {
-          lecture("MongoDB")
-        }
-      }
-*/
-
       neoFlow()
-/*
-      flow("Neo4j")
-      {
-          week(16)
-          {
-              lecture("Neo4J")
-          }
-      }
-*/
-
       redisFlow()
-/*
-      flow("Redis")
-      {
-          week(19)
-          {
-              lecture("Redis")
-          }
-      }
-*/
-      // attendance(20.0)
+
 
       exam = """
       Oral exam, based on a group exam project.

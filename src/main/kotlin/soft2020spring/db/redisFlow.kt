@@ -2,7 +2,7 @@ package soft2020spring.db
 
 import dk.kalhauge.course.dsl.*
 
-fun Course.redisFlow() = flow("Redis")
+fun Course.redisFlow() = flow("Key-Value NoSQL Data Store: Redis")
 {
     text = """
       Redis is a key-value store, the forth type of NoSQL databases. 
@@ -16,27 +16,35 @@ fun Course.redisFlow() = flow("Redis")
     {
         active = true
         lecture("Introduction and Implementations of Redis")
-        {}
+        {
+            note = "A"
+        }
     }
 
     week(20)
     {
         active = true
         lecture("NoSql Multidatabase Project Presentation")
-        {}
+        {
+            note = "AD"
+        }
     }
 
     week(21)
     {
         active = true
         lecture("Exam Project")
-        {}
+        {
+            note = "AD"
+        }
     }
 
     week(22)
     {
         active = true
         lecture("Exam Project")
-        {}
+        {
+            note = "AD"
+        }
     }
 }

@@ -16,34 +16,59 @@ fun Course.sqlFlow() = flow("SQL Databases")
     {
         active = true
         lecture("Relational Databases Recap")
-        {}
+        {
+            note = "A"
+            overview = """
+            Overview of knowledge and experience in working with RDB:
+            * RDB Modelling and Design
+            * Normalisation and De-normalization
+            * Relational Algebra
+            * SQL
+            * ORM
+          """.trimIndent()
+        }
     }
 
     week(7)
     {
         active = true
         lecture("Programming RDB")
-        {}
+        {
+            note = "A"
+            overview = """
+            RDB Development and Implementation, Program Objects:
+            * Advanced SQL
+            * Integration Constrains
+            * Triggers
+            * Stored Procedures
+            * User-Defined Functions
+          """.trimIndent()
+        }
     }
 
     week(8)
     {
         active = true
-        lecture("Managing Transactions and Locks")
-        {}
+        lecture("RDB Management and Optimization")
+        {
+            note = "D"
+            overview = """
+            RDB Management and Optimization:
+            * Managing Transactions and Locks
+            * Concurrency Control
+            * Query Analysis and Optimization
+            * Execution Plans
+            * Access Management
+          """.trimIndent()
+        }
     }
 
     week(9)
     {
         active = true
-        lecture("Query Analysis and Optimization")
-        {}
-    }
-
-    week(10)
-    {
-        active = true
         lecture("RDB Project Presentation")
-        {}
+        {
+            note = "AD"
+        }
     }
 }
