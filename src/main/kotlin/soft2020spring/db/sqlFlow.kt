@@ -42,6 +42,7 @@ fun Course.sqlFlow() = flow("SQL Databases")
             * Triggers
             * Stored Procedures
             * User-Defined Functions
+            * View
           """.trimIndent()
         }
     }
