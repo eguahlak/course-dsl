@@ -1,6 +1,10 @@
 package ap2019b
 
 import dk.kalhauge.course.dsl.*
+<<<<<<< HEAD
+=======
+//import dk.kalhauge.org.course.dsl.*
+>>>>>>> b8ae1c76b25788b49796f2b2d0dafd8010b585f8
 import dk.kalhauge.course.printers.FileContext
 import dk.kalhauge.course.printers.GitHubPagesVisitor
 import dk.kalhauge.util.anchorize

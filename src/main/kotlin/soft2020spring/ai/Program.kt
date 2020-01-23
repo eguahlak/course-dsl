@@ -1,51 +1,62 @@
 package soft2020spring.ai
 
-import dk.kalhauge.course.dsl.afternoon
-import dk.kalhauge.course.dsl.course
-import dk.kalhauge.course.dsl.spring
-import dk.kalhauge.course.dsl.wednesday
+import dk.kalhauge.course.dsl.*
 import dk.kalhauge.course.printers.FileContext
 import dk.kalhauge.course.printers.GitHubPagesVisitor
 import dk.kalhauge.util.anchorize
 
-val slideRoot = "/Users/tdi/Documents/Teaching/AI/2020/Presentations/"
+val localRoot = "/Users/tdi/Documents/Teaching/AI/2020/"
+val gitRoot = "https://github.com/datsoftlyngby/soft2020spring-AI/"
 
 fun main() {
-  val course = course(
-      "Artificial Intelligence",
-      spring(2020),
-      root = "AI/"
-  ) {
+  val course = course("Artificial Intelligence", spring(2020), root = "AI/")
+  {
       // tuesday(morning)
       wednesday(afternoon)
       overview = """
-        Hi Dora, do you know:
-        There is a difference between developing APIs,
-        developing programs, and using them.
-        
-        ...
-        
+        This course ...
         """.trimIndent()
+
       plan = """
-      The main language will be Kotlin with detours for Java and C#.
-      This is because Kotlin offers special mechanisms for building APIs
-      including Domain Specific Languages (DSL), and Kotlin integrates 100% with Java.
-
+      The course content is divided into three main streams: Artificial Intelligence, Machine Learning, and Deep Learning. ...
       """.trimIndent()
-      aiFlow()
 
+      aiFlow()
+      flow("AI")
+      {
+        week(5)
+        {
+          lecture("Introduction to AI")
+        }
+      }
+
+      mlFlow()
+      flow("ML")
+      {
+        week(7)
+        {
+          lecture("Introduction to ML")
+        }
+      }
+
+      dlFlow()
+      flow("DL")
+      {
+        week(11)
+        {
+          lecture("Introduction to DL")
+        }
+      }
       // attendance(20.0)
 
       exam = """
-      30 minutes oral exam, no preparation but questions known in advance.
-      A student shall have a minimum of 80 [credits](#${"Assignments and Credits".anchorize()}) to attend the exam.
+      Oral exam, based on a group exam project.
+      A student must have collected a minimum of 80 [credits](#${"Assignments and Credits".anchorize()}) during the semester to attend the exam.
       """.trimIndent()
   }
+
   GitHubPagesVisitor(
-      FileContext(
-          "/Users/tdi/Documents/GitHub/soft2020spring/docs"
-      )
-  )
+    FileContext("/Users/tdi/Documents/GitHub/soft2020spring/docs"))
     .visit(course)
   // GitHubPagesVisitor(ConsoleContext()).visit(course)
   }
