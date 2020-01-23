@@ -11,26 +11,28 @@ val gitRoot = "https://github.com/datsoftlyngby/soft2020spring-DB/"
 fun main() {
   val course = course("Databases for Developers", spring(2020), root = "DB/")
   {
-      thursday(morning)
+      nextLectureNumber = 1
+      thursday("08:30" to "14:00")
       //wednesday(afternoon)
       overview = """
         This cource ...
         """.trimIndent()
 
       plan = """
-      The course content is divided into two main streams: SQL Databases and NoSQL Databases. ...
+      The course content is divided into two main streams: __SQL Databases__ and __NoSQL Databases__. ...
       """.trimIndent()
 
       sqlFlow()
-      flow("SQL")
+      /*flow("SQL")
       {
         week(6)
         {
           lecture("SQL Recap")
         }
       }
-
+*/
       hbaseFlow()
+/*
       flow("HBase")
       {
         week(10)
@@ -38,8 +40,10 @@ fun main() {
           lecture("HBASE")
         }
       }
+*/
 
       mongoFlow()
+/*
       flow("Mongo DB")
       {
         week(12)
@@ -47,8 +51,10 @@ fun main() {
           lecture("MongoDB")
         }
       }
+*/
 
       neoFlow()
+/*
       flow("Neo4j")
       {
           week(16)
@@ -56,8 +62,10 @@ fun main() {
               lecture("Neo4J")
           }
       }
+*/
 
       redisFlow()
+/*
       flow("Redis")
       {
           week(19)
@@ -65,6 +73,7 @@ fun main() {
               lecture("Redis")
           }
       }
+*/
       // attendance(20.0)
 
       exam = """

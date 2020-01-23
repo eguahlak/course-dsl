@@ -19,15 +19,20 @@ fun Course.aiFlow() = flow("Artificial Intelligence")
       {
           note = ""
           objective = "To get an idea of the course content ..."
-          knowledge("which programming language to choose for an application", true)
-          ability("different implementations of properties", true)
-          skill("the reason behind a restrictive code policy", true)
+          knowledge("which programming language to choose for an application", false)
+          ability("different implementations of properties", false)
+          skill("the reason behind a restrictive code policy", false)
           overview = """
-            Agenda here
+            Today we will learn about bla bla bla.
+            
+            * Intro to blib
+            * going throhg blob
           """.trimIndent()
 
           // Resources here, in this order
-          presentation("$localRoot/Presentations/ai1.pdf")
+          presentation("$localRoot/Presentations/ai1.pdf") {
+              title = "Presentation 1"
+          }
           exercise("$localRoot/Exercises/Ex1-1.pdf")
           exercise("$localRoot/Exercises/Ex1-2.pdf")
           exercise("$localRoot/Exercises/Ex1-3.pdf")
@@ -46,9 +51,11 @@ fun Course.aiFlow() = flow("Artificial Intelligence")
           // Activities
           attendance(credits = 1.0)
           read("Lecture Notes", 1.00)
+          /*
           work("Exercise 1", 0.50)
           work("Exercise 2", 0.50)
           work("Exercise 3", 0.50)
+          */
           read("Reading Task", 0.30)
           write("Your answers on the reading task", 0.50)
           assignment(
@@ -75,9 +82,9 @@ fun Course.aiFlow() = flow("Artificial Intelligence")
         {
             note = ""
             objective = "To get an idea of the course content"
-            knowledge("which programming language to choose for an application", true)
-            ability("different implementations of properties", true)
-            skill("the reason behind a restrictive code policy", true)
+            knowledge("which programming language to choose for an application", false)
+            ability("different implementations of properties", false)
+            skill("the reason behind a restrictive code policy", false)
             overview = """
         Agenda here
         """.trimIndent()
@@ -98,13 +105,15 @@ fun Course.aiFlow() = flow("Artificial Intelligence")
                 credits = 30.0
             )
             attendance(credits = 1.0)
+            /*
             work("Exercise 1", 0.50)
             work("Exercise 2", 0.50)
             work("Exercise 3", 0.50)
+            */
             read("Homework 2", 0.30)
             write("Your answers on Homework 2", 0.50)
             work("Assignment 1", 2.0)
-            work("selfstudy", 4.0)
+            work("Selfstudy", 4.0)
 
             repository("$gitRoot")
             externalLink("http://cphbusiness.dk")
@@ -127,9 +136,9 @@ fun Course.aiFlow() = flow("Artificial Intelligence")
         {
           note = ""
           objective = "To get an idea of the course content"
-          knowledge("which programming language to choose for an application", true)
-          ability("different implementations of properties", true)
-          skill("the reason behind a restrictive code policy", true)
+          knowledge("which programming language to choose for an application", false)
+          ability("different implementations of properties", false)
+          skill("the reason behind a restrictive code policy", false)
           overview = """
         Agenda here
         """.trimIndent()
@@ -150,9 +159,11 @@ fun Course.aiFlow() = flow("Artificial Intelligence")
             credits = 30.0
           )
           attendance(credits = 1.0)
+          /*
           work("Exercise 1", 0.50)
           work("Exercise 2", 0.50)
           work("Exercise 3", 0.50)
+          */
           read("Homework 3", 0.30)
           write("Your answers on Homework 3", 0.50)
           work("Assignment 1", 2.0)

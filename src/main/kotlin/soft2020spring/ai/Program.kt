@@ -22,31 +22,31 @@ fun main() {
       """.trimIndent()
 
       aiFlow()
-      flow("AI")
+      /*flow("AI")
       {
-        week(5)
+        week(6)
         {
           lecture("Introduction to AI")
         }
-      }
+      }*/
 
       mlFlow()
-      flow("ML")
+      /*flow("ML")
       {
         week(7)
         {
           lecture("Introduction to ML")
         }
-      }
+      }*/
 
       dlFlow()
-      flow("DL")
+      /*flow("DL")
       {
         week(11)
         {
           lecture("Introduction to DL")
         }
-      }
+      }*/
       // attendance(20.0)
 
       exam = """
