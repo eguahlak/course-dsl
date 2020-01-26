@@ -28,16 +28,16 @@ fun Course.sqlFlow() = flow("SQL Databases")
           """.trimIndent()
 
             // Resources here, in this order
-            presentation("${soft2020spring.ai.localRoot}/Presentations/Test.pdf")
+            presentation("${soft2020spring.db.localRoot}/Presentations/Test.pdf")
             {
                 title = "Overview of Relational Database Design and Development"
             }
-            exercise("${soft2020spring.ai.localRoot}/Exercises/Test.pdf")
-            exercise("${soft2020spring.ai.localRoot}/Exercises/IO1.pdf")
-            exercise("${soft2020spring.ai.localRoot}/Exercises/Test.pdf")
+            exercise("${soft2020spring.db.localRoot}/Exercises/Test.pdf")
+            exercise("${soft2020spring.db.localRoot}/Exercises/l01.pdf")
+            exercise("${soft2020spring.db.localRoot}/Exercises/Test.pdf")
 
-            repository("${soft2020spring.ai.gitioRoot}")
-            repository("${soft2020spring.ai.gitRoot}")
+            repository("${soft2020spring.db.gitioRoot}")
+            repository("${soft2020spring.db.gitRoot}")
 
             externalLink("https://www.postgresql.org/")
             {
@@ -63,21 +63,21 @@ fun Course.sqlFlow() = flow("SQL Databases")
 
             assignment(
                 "Homework Assignment 1: ...",
-                sourcePath = "${soft2020spring.ai.localRoot}/Assignments/Test.pdf",
+                sourcePath = "${soft2020spring.db.localRoot}/Assignments/Test.pdf",
                 load = 3.0,
                 credits = 3.0
             )
 
             assignment(
                 "Mini Project 1",
-                sourcePath = "${soft2020spring.ai.localRoot}/Assignments/Test.pdf",
+                sourcePath = "${soft2020spring.db.localRoot}/Assignments/Test.pdf",
                 load = 5.0,
                 credits = 0.0
             )
 
             assignment(
                 "Draft of the Exam Project",
-                sourcePath = "${soft2020spring.ai.localRoot}/Assignments/Test.pdf",
+                sourcePath = "${soft2020spring.db.localRoot}/Assignments/Test.pdf",
                 load = 1.0,
                 credits = 0.0
             )
@@ -102,16 +102,16 @@ fun Course.sqlFlow() = flow("SQL Databases")
           """.trimIndent()
 
             // Resources here, in this order
-            presentation("${soft2020spring.ai.localRoot}/Presentations/Test.pdf")
+            presentation("${soft2020spring.db.localRoot}/Presentations/Test.pdf")
             {
                 title = "Overview of Relational Database Design and Development"
             }
-            exercise("${soft2020spring.ai.localRoot}/Exercises/Test.pdf")
-            exercise("${soft2020spring.ai.localRoot}/Exercises/IO1.pdf")
-            exercise("${soft2020spring.ai.localRoot}/Exercises/Test.pdf")
+            exercise("${soft2020spring.db.localRoot}/Exercises/Test.pdf")
+            exercise("${soft2020spring.db.localRoot}/Exercises/l01.pdf")
+            exercise("${soft2020spring.db.localRoot}/Exercises/Test.pdf")
 
-            repository("${soft2020spring.ai.gitioRoot}")
-            repository("${soft2020spring.ai.gitRoot}")
+            repository("${soft2020spring.db.gitioRoot}")
+            repository("${soft2020spring.db.gitRoot}")
 
             externalLink("https://www.postgresql.org/")
             {
@@ -133,21 +133,21 @@ fun Course.sqlFlow() = flow("SQL Databases")
 
             assignment(
                 "Homework Assignment 2: ...",
-                sourcePath = "${soft2020spring.ai.localRoot}/Assignments/Test.pdf",
+                sourcePath = "${soft2020spring.db.localRoot}/Assignments/Test.pdf",
                 load = 3.0,
                 credits = 3.0
             )
 
             assignment(
                 "Mini Project 1",
-                sourcePath = "${soft2020spring.ai.localRoot}/Assignments/Test.pdf",
+                sourcePath = "${soft2020spring.db.localRoot}/Assignments/Test.pdf",
                 load = 5.0,
                 credits = 0.0
             )
 
             assignment(
                 "Draft of the Exam Project",
-                sourcePath = "${soft2020spring.ai.localRoot}/Assignments/Test.pdf",
+                sourcePath = "${soft2020spring.db.localRoot}/Assignments/Test.pdf",
                 load = 2.0,
                 credits = 0.0
             )
@@ -171,16 +171,16 @@ fun Course.sqlFlow() = flow("SQL Databases")
           """.trimIndent()
 
             // Resources here, in this order
-            presentation("${soft2020spring.ai.localRoot}/Presentations/Test.pdf")
+            presentation("${soft2020spring.db.localRoot}/Presentations/Test.pdf")
             {
                 title = "Overview of Relational Database Design and Development"
             }
-            exercise("${soft2020spring.ai.localRoot}/Exercises/Test.pdf")
-            exercise("${soft2020spring.ai.localRoot}/Exercises/IO1.pdf")
-            exercise("${soft2020spring.ai.localRoot}/Exercises/Test.pdf")
+            exercise("${soft2020spring.db.localRoot}/Exercises/Test.pdf")
+            exercise("${soft2020spring.db.localRoot}/Exercises/l01.pdf")
+            exercise("${soft2020spring.db.localRoot}/Exercises/Test.pdf")
 
-            repository("${soft2020spring.ai.gitioRoot}")
-            repository("${soft2020spring.ai.gitRoot}")
+            repository("${soft2020spring.db.gitioRoot}")
+            repository("${soft2020spring.db.gitRoot}")
 
             externalLink("https://www.postgresql.org/")
             {
@@ -202,21 +202,21 @@ fun Course.sqlFlow() = flow("SQL Databases")
 
             assignment(
                 "Homework Assignment 3: ...",
-                sourcePath = "${soft2020spring.ai.localRoot}/Assignments/Test.pdf",
+                sourcePath = "${soft2020spring.db.localRoot}/Assignments/Test.pdf",
                 load = 3.0,
                 credits = 3.0
             )
 
             assignment(
                 "Mini Project 1",
-                sourcePath = "${soft2020spring.ai.localRoot}/Assignments/Test.pdf",
+                sourcePath = "${soft2020spring.db.localRoot}/Assignments/Test.pdf",
                 load = 5.0,
                 credits = 0.0
             )
 
             assignment(
                 "Draft of the Exam Project",
-                sourcePath = "${soft2020spring.ai.localRoot}/Assignments/Test.pdf",
+                sourcePath = "${soft2020spring.db.localRoot}/Assignments/Test.pdf",
                 load = 2.0,
                 credits = 0.0
             )
@@ -234,7 +234,7 @@ fun Course.sqlFlow() = flow("SQL Databases")
 
             assignment(
                 "Mini Project 1",
-                sourcePath = "${soft2020spring.ai.localRoot}/Assignments/Test.pdf",
+                sourcePath = "${soft2020spring.db.localRoot}/Assignments/Test.pdf",
                 load = 0.0,
                 credits = 30.0
             )
