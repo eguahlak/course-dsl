@@ -235,7 +235,7 @@ fun Course.sqlFlow() = flow("SQL Databases")
             assignment(
                 "Mini Project 1",
                 sourcePath = "${soft2020spring.db.localRoot}/Assignments/Test.pdf",
-                load = 0.0,
+                load = 4.0,
                 credits = 30.0
             )
         }
