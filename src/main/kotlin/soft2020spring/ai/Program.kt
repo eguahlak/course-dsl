@@ -7,6 +7,7 @@ import dk.kalhauge.util.anchorize
 
 val localRoot = "/Users/tdi/Documents/Teaching/AI/2020/"
 val gitRoot = "https://github.com/datsoftlyngby/soft2020spring-AI/"
+val gitioRoot = "https://datsoftlyngby.github.io/soft2020spring/AI/course-info.html"
 
 fun main() {
   val course = course("Artificial Intelligence", spring(2020), root = "AI/")
