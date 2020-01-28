@@ -36,6 +36,8 @@ fun Course.neoFlow() = flow("Graph-Oriented NoSQL Database: Neo4J")
         lecture("Selected Implementatipns of Graph DB and Neo4J")
         {
             note = "D"
+
+            // https://neo4j.com/developer/example-project/
         }
     }
 }

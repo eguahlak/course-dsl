@@ -36,7 +36,7 @@ fun Course.sqlFlow() = flow("SQL Databases")
             exercise("${soft2020spring.db.localRoot}/Exercises/l01.pdf")
             exercise("${soft2020spring.db.localRoot}/Exercises/Test.pdf")
 
-            repository("${soft2020spring.db.gitioRoot}")
+            repository("${soft2020spring.db.gitDBRoot}")
             repository("${soft2020spring.db.gitRoot}")
 
             externalLink("https://www.postgresql.org/")
@@ -110,7 +110,7 @@ fun Course.sqlFlow() = flow("SQL Databases")
             exercise("${soft2020spring.db.localRoot}/Exercises/l01.pdf")
             exercise("${soft2020spring.db.localRoot}/Exercises/Test.pdf")
 
-            repository("${soft2020spring.db.gitioRoot}")
+            repository("${soft2020spring.db.gitDBRoot}")
             repository("${soft2020spring.db.gitRoot}")
 
             externalLink("https://www.postgresql.org/")
@@ -179,7 +179,7 @@ fun Course.sqlFlow() = flow("SQL Databases")
             exercise("${soft2020spring.db.localRoot}/Exercises/l01.pdf")
             exercise("${soft2020spring.db.localRoot}/Exercises/Test.pdf")
 
-            repository("${soft2020spring.db.gitioRoot}")
+            repository("${soft2020spring.db.gitDBRoot}")
             repository("${soft2020spring.db.gitRoot}")
 
             externalLink("https://www.postgresql.org/")
