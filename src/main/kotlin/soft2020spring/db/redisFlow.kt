@@ -33,9 +33,9 @@ fun Course.redisFlow() = flow("Key-Value NoSQL Data Store: Redis")
     week(21)
     {
         active = true
-        lecture("Exam Project")
+        lecture("*** Ascension ***")
         {
-            note = "AD"
+            note = "-"
         }
     }
 
